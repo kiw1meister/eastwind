@@ -10,7 +10,8 @@ export default {
       'forestgreen' : '#08392b',
       'tealgreen' : '#578e87',
       'cream' :  '#f7e2c7',
-      'green' : '#29660c'
+      'green' : '#29660c',
+      'white' : '#FFFFFF'
     }
   },
   plugins: [],

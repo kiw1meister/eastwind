@@ -7,12 +7,11 @@
 
 </script>
 
-<div class="flex bg-forestgreen text-white justify-between">
-  <button onclick={()=> active = !active}>
-    {active? 'Close' : 'Open'} Menu
+<div class="flex items-center justify-center h-20 bg-forestgreen text-white">
+  <button class="absolute top-15 left-5" onclick={active = !active}>
+    {active ? 'Close' : 'Open'} Menu
   </button>
-
-  <h1>East Wind Academy</h1>
+  <h1 class="text-center text-4xl">Project East Wind</h1>
 </div>
 
 <Sidebar 
