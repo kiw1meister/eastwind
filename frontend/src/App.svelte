@@ -1,30 +1,41 @@
 <script lang="ts">
-  import Counter from './component/Counter.svelte'
+  import { siteState } from './store'
+  import Home from './component/Home.svelte';
   import Sidebar from './component/Sidebar.svelte';
+  import Basics from './component/Basics.svelte';
 
-  let siteState = $state('home')
-  let active = $state(false)
+  // let siteState = $state<string>('home')
+  // let active = $state<boolean>(false)
+
+  let state;
+  $: state = $siteState;
+
+  function toggleActive() {
+    siteState.update(state => ({ ...state, active: !state.active }));
+  }
 
 </script>
 
 <div class="flex items-center justify-center h-20 bg-forestgreen text-white">
-  <button class="absolute top-15 left-5" onclick={active = !active}>
-    {active ? 'Close' : 'Open'} Menu
+  <button class="absolute top-15 left-5" onclick={toggleActive}>
+    {state.active ? 'Close' : 'Open'} Menu
   </button>
   <h1 class="text-center text-4xl">Project East Wind</h1>
 </div>
 
-<Sidebar 
-  {active}
-/>
+<Sidebar />
 
 <main class="bg-cream h-screen">
-  {#if siteState==='home'}
-    <h2 class="text-center ">
-      Welcome to East Wind Academy!
-    </h2>
+  {#if state.view==='home'}
+    <Home />
   {/if}
-  {#if siteState==="basics"}
+  {#if state.view==="basics"}
+    <Basics />
+  {/if}
+  <!-- {#if siteState==="strategy"}
 
   {/if}
+  {#if siteState==="practice"}
+
+  {/if} -->
 </main>
