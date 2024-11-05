@@ -3,6 +3,7 @@
   import Home from './component/Home.svelte';
   import Sidebar from './component/Sidebar.svelte';
   import Basics from './component/Basics.svelte';
+  import Resources from './component/Resources.svelte';
 
   // let siteState = $state<string>('home')
   // let active = $state<boolean>(false)
@@ -32,10 +33,16 @@
   {#if state.view==="basics"}
     <Basics />
   {/if}
-  <!-- {#if siteState==="strategy"}
-
+  <!-- {#if state.view==="strategy"}
+    <Basics />
   {/if}
-  {#if siteState==="practice"}
-
+  {#if state.view==="scoring"}
+    <Basics />
+  {/if}
+  {#if state.view==="practice"}
+    <Basics />
   {/if} -->
+  {#if state.view==="resources"}
+    <Resources />
+  {/if}
 </main>

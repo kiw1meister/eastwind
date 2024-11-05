@@ -1,5 +1,4 @@
-// src/lookup.ts
-export const mahjongLookup: Record<string, string> = {
+export const tileLookup: Record<string, string> = {
     //Wind
     "E": "https://upload.wikimedia.org/wikipedia/commons/9/90/MJf1-.svg",
     "S": "https://upload.wikimedia.org/wikipedia/commons/b/bb/MJf2-.svg",
