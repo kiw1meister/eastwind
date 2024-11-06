@@ -1,13 +1,13 @@
 export const tileLookup: Record<string, string> = {
     //Wind
-    "E": "https://upload.wikimedia.org/wikipedia/commons/9/90/MJf1-.svg",
-    "S": "https://upload.wikimedia.org/wikipedia/commons/b/bb/MJf2-.svg",
-    "W": "https://upload.wikimedia.org/wikipedia/commons/5/54/MJf3-.svg",
-    "N": "https://upload.wikimedia.org/wikipedia/commons/d/df/MJf4-.svg",
+    "e": "https://upload.wikimedia.org/wikipedia/commons/9/90/MJf1-.svg",
+    "s": "https://upload.wikimedia.org/wikipedia/commons/b/bb/MJf2-.svg",
+    "w": "https://upload.wikimedia.org/wikipedia/commons/5/54/MJf3-.svg",
+    "n": "https://upload.wikimedia.org/wikipedia/commons/d/df/MJf4-.svg",
     //Dragons
-    "R": "https://upload.wikimedia.org/wikipedia/commons/2/20/MJd1-.svg",
-    "G": "https://upload.wikimedia.org/wikipedia/commons/1/17/MJd2v1-.svg",
-    "H": "https://upload.wikimedia.org/wikipedia/commons/0/04/MJd3e-.svg",
+    "r": "https://upload.wikimedia.org/wikipedia/commons/2/20/MJd1-.svg",
+    "g": "https://upload.wikimedia.org/wikipedia/commons/1/17/MJd2v1-.svg",
+    "h": "https://upload.wikimedia.org/wikipedia/commons/0/04/MJd3e-.svg",
     //Pin
     "1p": "https://upload.wikimedia.org/wikipedia/commons/b/b3/MJt1-.svg",
     "2p": "https://upload.wikimedia.org/wikipedia/commons/a/a4/MJt2-.svg",

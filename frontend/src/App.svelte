@@ -4,12 +4,10 @@
   import Sidebar from './component/Sidebar.svelte';
   import Basics from './component/Basics.svelte';
   import Resources from './component/Resources.svelte';
+  import Practice from './component/Practice.svelte';
 
   // let siteState = $state<string>('home')
   // let active = $state<boolean>(false)
-
-  let state;
-  $: state = $siteState;
 
   function toggleActive() {
     siteState.update(state => ({ ...state, active: !state.active }));
@@ -19,7 +17,7 @@
 
 <div class="flex items-center justify-center h-20 bg-forestgreen text-white">
   <button class="absolute top-15 left-5" onclick={toggleActive}>
-    {state.active ? 'Close' : 'Open'} Menu
+    {$siteState.active ? 'Close' : 'Open'} Menu
   </button>
   <h1 class="text-center text-4xl">Project East Wind</h1>
 </div>
@@ -27,22 +25,22 @@
 <Sidebar />
 
 <main class="bg-cream h-screen">
-  {#if state.view==='home'}
+  {#if $siteState.view==='home'}
     <Home />
   {/if}
-  {#if state.view==="basics"}
+  {#if $siteState.view==="basics"}
     <Basics />
   {/if}
   <!-- {#if state.view==="strategy"}
-    <Basics />
+    <Strategy />
   {/if}
   {#if state.view==="scoring"}
-    <Basics />
-  {/if}
-  {#if state.view==="practice"}
-    <Basics />
+    <Scoring />
   {/if} -->
-  {#if state.view==="resources"}
+  {#if $siteState.view==="practice"}
+    <Practice />
+  {/if}
+  {#if $siteState.view==="resources"}
     <Resources />
   {/if}
 </main>
