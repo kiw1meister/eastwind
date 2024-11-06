@@ -5,6 +5,8 @@
     let tileNames: string[] = $state(['1p', '2p', '3p', 'E', 'R']);
 
     let input = $state("");
+
+    
   
     // Create an array of image paths based on the titles
     let tileImage = $state(tileNames.map(tile => tileLookup[tile] || '/images/default.png'));
@@ -14,7 +16,7 @@
 <input 
     type="text" 
     placeholder="Type tile names separated by commas (e.g., 1p, 2p, E, R)" 
-    bind:value={tileNames} 
+    bind:value={input}
     class="input-box"
 />
   
