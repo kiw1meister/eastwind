@@ -1,6 +1,5 @@
 <script lang=ts>
     let currentIndex = $state(1)
-    import { onMount } from 'svelte';
 
     import { tileLookup } from '../../assets/lookup'
 
@@ -14,7 +13,7 @@
         },
         card3: {
             image: ['5p', '6p', '7p'],
-            text: "A meld consists of 3 tiles. The above is a 'Chii' meld. It can only be formed using numbered tiles and consists of 3 tiles in sequential order"
+            text: "A meld consists of 3 tiles. Whenever you are waiting on a tile to either complete a meld or win the game, this is called a 'wait'. The above is a 'Chii' meld. It can only be formed using numbered tiles and consists of 3 tiles in sequential order"
         },
         card4: {
             image: ['5m', '5m', '5m'],

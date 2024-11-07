@@ -1,6 +1,5 @@
 <script lang=ts>
     let currentIndex = $state(1)
-    import { onMount } from 'svelte';
 
     import { tileLookup } from '../../assets/lookup'
 

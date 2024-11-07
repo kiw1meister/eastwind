@@ -14,27 +14,27 @@
 	class:left-0={$siteState.active}
 	class:left-[-500px]={!$siteState.active}
 >
-	<button onclick={() => {changeView('home'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('home'); console.log("Clicked", $siteState.view)}}>
 		Home
 	</button>
 	<br>
-	<button onclick={() => {changeView('basics'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('basics'); console.log("Clicked", $siteState.view)}}>
 		Rules and Basics
 	</button>
 	<br>
-	<button onclick={() => {changeView('strategy'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('strategy'); console.log("Clicked", $siteState.view)}}>
 		Strategy
 	</button>
 	<br>
-	<button onclick={() => {changeView('scoring'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('scoring'); console.log("Clicked", $siteState.view)}}>
 		Scoring
 	</button>
 	<br>
-	<button onclick={() => {changeView('practice'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('practice'); console.log("Clicked", $siteState.view)}}>
 		Practice
 	</button>
 	<br>
-	<button onclick={() => {changeView('resources'); console.log("Clicked", $siteState.view)}}>
+	<button class="text-black w-full py-2 mx-auto block shadow-lg bg-white rounded-xl hover:bg-tealgreen hover:text-white ease-in-out transition duration-300" onclick={() => {changeView('resources'); console.log("Clicked", $siteState.view)}}>
 		Resources
 	</button>
 </aside>

@@ -3,6 +3,7 @@
   import Home from './component/Home.svelte';
   import Sidebar from './component/Sidebar.svelte';
   import Basics from './component/Basics.svelte';
+  import Strategy from './component/Strategy.svelte';
   import Resources from './component/Resources.svelte';
   import Practice from './component/Practice.svelte';
 
@@ -31,10 +32,10 @@
   {#if $siteState.view==="basics"}
     <Basics />
   {/if}
-  <!-- {#if state.view==="strategy"}
+  {#if $siteState.view==="strategy"}
     <Strategy />
   {/if}
-  {#if state.view==="scoring"}
+  <!-- {#if state.view==="scoring"}
     <Scoring />
   {/if} -->
   {#if $siteState.view==="practice"}
