@@ -37,6 +37,10 @@ export const tileLookup: Record<string, string> = {
     "6m": "https://upload.wikimedia.org/wikipedia/commons/4/4c/MJw6-.svg",
     "7m": "https://upload.wikimedia.org/wikipedia/commons/c/c0/MJw7-.svg",
     "8m": "https://upload.wikimedia.org/wikipedia/commons/d/d3/MJw8-.svg",
-    "9m": "https://upload.wikimedia.org/wikipedia/commons/a/a9/MJw9-.svg"
+    "9m": "https://upload.wikimedia.org/wikipedia/commons/a/a9/MJw9-.svg",
+    //Aka Dora
+    "a5p": "https://upload.wikimedia.org/wikipedia/commons/5/58/MJt5r-.svg",
+    "a5s": "https://upload.wikimedia.org/wikipedia/commons/4/41/MJs5r-.svg",
+    "a5m": "https://upload.wikimedia.org/wikipedia/commons/9/9c/MJw5r-.svg",
   };
   

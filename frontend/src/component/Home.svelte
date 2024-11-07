@@ -1,8 +1,8 @@
 <script>
-
+    import { fade } from 'svelte/transition'
 </script>
 
-<div class="p-5 sm:w-1/2 place-content-center mx-auto">
+<div class="p-5 sm:w-1/2 place-content-center mx-auto" transition:fade>
     <h2 class="text-center mb-10 text-2xl">
         Welcome to Project East Wind!
     </h2>

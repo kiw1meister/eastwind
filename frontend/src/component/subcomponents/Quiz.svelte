@@ -46,13 +46,13 @@
 
 <div class="quiz-container">
     {#if questions.length > 0 && currentQuestionIndex < questions.length}
-        <div class="card p-6 shadow-lg">
+        <div class="card p-6 shadow-lg bg-white rounded-xl">
             <h2 class="text-lg font-semibold">{questions[currentQuestionIndex].question}</h2>
 
-            <div class="choices mt-4">
+            <div class="flex choices mt-4 justify-center">
                 {#each questions[currentQuestionIndex].choices as choice}
                     <button
-                        class="choice-btn"
+                        class="choice-btn m-2 p-2 shadow-lg rounded-lg border-2"
                         onclick={() => checkAnswer(choice)}
                         disabled={showAnswer}
                     >
@@ -67,14 +67,15 @@
                         ? "Correct!"
                         : `Incorrect! The correct answer is ${questions[currentQuestionIndex].answer}`}
                 </p>
-                <button class="next-btn mt-4" onclick={nextQuestion}>Next Question</button>
+                <button 
+                    class="next-btn mt-4 p-2 shadow-lg rounded-lg border-2" onclick={nextQuestion}>Next Question</button>
             {/if}
         </div>
     {:else if currentQuestionIndex >= questions.length}
-        <div class="card p-6 shadow-lg">
+        <div class="card p-6 shadow-lg bg-white rounded-xl">
             <h2 class="text-lg font-semibold">Quiz Complete!</h2>
             <p>Your final score is {score} / {questions.length}</p>
-            <button class="restart-btn mt-4" onclick={restartQuiz}>Restart Quiz</button>
+            <button class="restart-btn mt-4 p-2 shadow-lg rounded-lg border-2" onclick={restartQuiz}>Restart Quiz</button>
         </div>
     {/if}
 </div>
